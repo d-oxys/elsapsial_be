@@ -42,8 +42,8 @@ $ psql --username postgres
 $ CREATE DATABASE elspasial
 
 # grant privilages
-$ GRANT ALL PRIVILEGES ON DATABASE elspasial TO <user>;
-$ ALTER DATABASE elspasial OWNER TO <USER>;
+$ GRANT ALL PRIVILEGES ON DATABASE elspasial TO <user>
+$ ALTER DATABASE elspasial OWNER TO <USER>
 
 # migration the database
 $ npm run migrate up 
