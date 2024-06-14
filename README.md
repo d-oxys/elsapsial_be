@@ -35,6 +35,19 @@ $ npm install
 ## Running the app
 
 ```bash
+# login to postgresql
+$ psql --username postgres
+
+# create database
+$ CREATE DATABASE elspasial
+
+# grant privilages
+$ GRANT ALL PRIVILEGES ON DATABASE elspasial TO <user>;
+$ ALTER DATABASE elspasial OWNER TO <USER>;
+
+# migration the database
+$ npm run migrate up 
+
 # development
 $ npm run start
 
