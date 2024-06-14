@@ -41,9 +41,9 @@ $ psql --username postgres
 # create database
 $ CREATE DATABASE elspasial
 
-# grant privilages
-$ GRANT ALL PRIVILEGES ON DATABASE elspasial TO <user>
-$ ALTER DATABASE elspasial OWNER TO <USER>
+# grant privilages to user
+$ GRANT ALL PRIVILEGES ON DATABASE elspasial TO developer
+$ ALTER DATABASE elspasial OWNER TO developer
 
 # migration the database
 $ npm run migrate up 
@@ -56,6 +56,15 @@ $ npm run start:dev
 
 # production mode
 $ npm run start:prod
+
+# add user and driver role to user_roles database
+# use this api http://localhost:3000/register/role
+  {
+    "name" : "driver"
+  }
+  {
+    "name" : "user"
+  }
 ```
 
 ## Test
